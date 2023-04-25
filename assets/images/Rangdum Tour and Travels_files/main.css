@@ -1,0 +1,823 @@
+/*=================================================
+||				1. Imports 
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+:root {
+  --primary-color: #001e83;
+  --secondary-color: #56f9f1;
+  --main-green: #11860b;
+  --main-yellow: #fced00;
+  --main-orange: #ffa000;
+  --main-blue: #60c9eb;
+}
+
+/* Color Combinations::after
+DARK BLUE: #001e83
+YELLOW: #fced00
+Light Blue (Tealish): #56f9f1
+Green: #11860b;
+*/
+body {
+  font-family: "Roboto", "Open-Sans", sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+}
+/*Owl Carousel*/
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 43%;
+  font-size: 22px;
+  padding: 5px;
+}
+.owl-next {
+  right: -40px;
+}
+.owl-prev {
+  left: -40px;
+}
+.owl-prev:before {
+  content: "\f3d2";
+  font-family: "ionicons";
+  /*color: #fff;*/
+}
+.owl-next:before {
+  content: "\f3d3";
+  font-family: "ionicons";
+  /*color: #fff;*/
+}
+.section-title {
+  color: #313131;
+  text-align: center;
+}
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 2rem !important;
+}
+.section-wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+p {
+  color: #969595;
+}
+.border-radius {
+  border-radius: 0 !important;
+  border-color: #60c9eb;
+  height: 45px;
+}
+p:hover {
+  cursor: default;
+}
+.navbar-toggle {
+  background-color: rgb(96, 201, 235);
+  border: 1px solid rgb(96, 201, 235);
+  border-radius: 0;
+  transition: all 0.4s ease-in-out;
+}
+.navbar-default .navbar-toggle {
+  border-color: rgb(96, 201, 235);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #fff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background: #fff;
+}
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle:focus .icon-bar {
+  background-color: rgb(96, 201, 235);
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*=================================================
+||				3. Header
+==================================================*/
+/*navbar*/
+.navbar-default .navbar-brand {
+  display: flex;
+  border: 1px solid transparent;
+  color: var(--primary-color);
+  align-items: center;
+  font-size: 2rem;
+  padding: 10px 0px;
+  height: auto;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+ul.nav.navbar-nav.navbar-right {
+  margin-top: 30px;
+}
+.company-name {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.company-type {
+  color: var(--main-green);
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: transparent;
+  padding: 5px 0px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+  color: var(--primary-color);
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: background-color 0.4s ease-in-out;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: var(--main-green);
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: var(--main-green);
+  background: #e8f9ff;
+}
+.navbar-nav > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: var(--main-green);
+  background: #e8f9ff;
+}
+/*Home*/
+.flexslider {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+  background: transparent;
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-item {
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.inner-intro {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.intro {
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-title-wrapper {
+  background: var(--main-blue);
+  display: inline-block;
+  padding: 0 3.2rem;
+  opacity: 0.9;
+}
+.header-title {
+  font-size: 5rem;
+  font-weight: 400;
+}
+.header-title span {
+  color: var(--primary-color);
+}
+.header-sub-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 20px 40px 25px;
+  font-weight: 300;
+}
+
+/*=================================================
+||				5. Our Blazzing offers
+==================================================*/
+.offer {
+  color: black;
+  text-align: center;
+  background: #f9f9f9;
+}
+.offer-item {
+  background: #fff;
+  letter-spacing: 1px;
+  padding: 30px;
+  transition: all 0.7s ease-in;
+  margin: 10px 0px;
+}
+.icon {
+  padding: 20px 0;
+  font-size: 35px;
+  color: #60c9eb;
+}
+.offer-item h3 {
+  padding-bottom: 40px;
+  margin: 0px;
+  font-size: 15px;
+}
+.offer-item p {
+  padding-bottom: 20px;
+  font-size: 13px;
+  line-height: 170%;
+}
+.offer-item:hover {
+  box-shadow: 0 0 30px rgba(125, 125, 125, 0.1);
+}
+
+/*=================================================
+||				6. Top place to visit
+==================================================*/
+.visit-item {
+  padding: 0px 15px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0.6;
+}
+.visit-item:hover {
+  opacity: 1;
+}
+.visit .owl-theme .owl-controls .owl-nav [class*="owl-"] {
+  background: #fff;
+  color: #60c9eb;
+  font-size: 25px;
+}
+
+.owl-carousel .owl-item {
+  min-height: 400px;
+}
+
+.owl-carousel .owl-item {
+  height: 100%;
+}
+
+.owl-carousel .owl-item img {
+  height: 400px;
+  object-fit: cover;
+}
+/*=================================================
+||				7. offer-cta
+==================================================*/
+.offer-cta {
+  background: url("../images/cta-1.png") right center;
+  background-size: cover;
+}
+.offering {
+  float: right;
+  color: #60c9eb;
+  text-align: center;
+  padding: 32px 0;
+}
+.percent {
+  font-style: italic;
+  font-size: 68px;
+}
+.percent span {
+  font-size: 117px;
+  font-weight: 700;
+  font-style: normal;
+}
+.FTour {
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: -20px;
+}
+.price-btn {
+  background: #60c9eb;
+  color: #fff;
+  border-color: #60c9eb;
+  text-transform: capitalize;
+  margin: 20px;
+}
+.price-btn:hover {
+  color: #60c9eb;
+  background-color: #fff;
+  border-color: #60c9eb;
+}
+/*=================================================
+||				8. Additional Services
+==================================================*/
+.additional-services .col-md-4 {
+  margin-bottom: 30px;
+}
+.custom-table {
+  display: table;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.add-srvc-img {
+  max-width: 100%;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*=================================================
+||				10. Contact-Details
+==================================================*/
+.contact {
+  margin-top: 2rem;
+}
+.contact-details {
+  text-align: center !important;
+}
+.brand-logo {
+  font-size: 33px;
+  color: #60c9eb;
+}
+a.brand-logo span {
+  color: #583b54;
+}
+a.brand-logo:focus,
+a.brand-logo:hover {
+  color: #60c9eb;
+  text-decoration: none;
+}
+
+.custom-sub-btn {
+  background-color: #60c9eb;
+  color: #fff;
+  border-color: #60c9eb;
+  transition: all 0.4s ease-in-out;
+}
+.custom-sub-btn:hover {
+  background: #53b1de;
+  border-color: #53b1de;
+  color: #fff;
+}
+
+#top-places .place {
+  position: relative;
+}
+
+#top-places .place span {
+  position: absolute;
+  z-index: 1000;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #001e83;
+  min-width: 100px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  right: 15px;
+  top: 0;
+}
+
+.contact .contact-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.social-icon {
+  text-align: center;
+  list-style-type: none;
+  margin: 1rem 0 1rem 0;
+  padding: 0;
+  font-size: 20px;
+}
+.social-icon li {
+  display: inline;
+  padding: 5px;
+}
+.social-icon a {
+  color: #60c9eb;
+}
+.social-icon a:hover {
+  color: #53b1de;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #60c9eb;
+}
+footer a {
+  color: #fff;
+  padding: 5px;
+}
+footer a:hover {
+  color: #fff;
+}
+footer a:hover,
+footer a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.top {
+  display: inline-block;
+  background-color: #2f6b5a;
+  border-radius: 4px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+/* WhatsApp Pulse */
+
+.btn-whatsapp-pulse-border {
+  bottom: 120px;
+  right: 20px;
+  animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  border: 5px solid #25d366;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    padding: 25px;
+    opacity: 0.75;
+  }
+  75% {
+    padding: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*=================================================
+||				13. Chat Widget
+==================================================*/
+
+#whatsapp-chat a:link,
+#whatsapp-chat a:visited {
+  color: #444;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+#whatsapp-chat h1 {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  background: linear-gradient(to right top, #6f96f3, #164ed2);
+  padding: 20px;
+  color: #fff;
+  border-radius: 50px;
+}
+.credit {
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+/* CSS Multiple Whatsapp Chat */
+#whatsapp-chat {
+  position: fixed;
+  background: #fff;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  bottom: 90px;
+  right: 30px;
+  overflow: hidden;
+  z-index: 99;
+  animation-name: showchat;
+  animation-duration: 1s;
+  transform: scale(1);
+}
+
+.whatsapp-chatting {
+  padding: 8px 12px;
+  border-radius: 24px;
+  border: none;
+  background: rgb(20, 198, 86);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 20px;
+  overflow: hidden;
+  appearance: none;
+}
+
+a.blantershow-chat {
+  background: linear-gradient(to right top, #11860b, #16d252);
+  color: #fff;
+  position: fixed;
+  z-index: 98;
+  bottom: 10px;
+  right: 40px;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  text-decoration: none;
+}
+a.blantershow-chat i {
+  transform: scale(1.2);
+  margin: 0 10px 0 0;
+}
+.header-chat {
+  background: linear-gradient(to right top, #11860b, #16d252);
+  color: #fff;
+  padding: 20px;
+}
+.header-chat h3 {
+  margin: 0 0 10px;
+}
+.header-chat p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+.info-avatar {
+  position: relative;
+}
+.info-avatar img {
+  border-radius: 100%;
+  width: 50px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#whatsapp-chat a.informasi {
+  padding: 20px;
+  display: block;
+  overflow: hidden;
+  animation-name: showhide;
+  animation-duration: 2.5s;
+}
+#whatsapp-chat a.informasi:hover {
+  background: #f1f1f1;
+}
+.info-chat span {
+  display: block;
+}
+#get-label,
+span.chat-label {
+  font-size: 15px;
+  color: #888;
+}
+#get-nama,
+span.chat-nama {
+  margin: 25px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+#get-label,
+#get-nama {
+  color: #fff;
+}
+span.my-number {
+  display: none;
+}
+.blanter-msg {
+  color: #444;
+  padding: 20px;
+  font-size: 12.5px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+textarea#chat-input {
+  border: none;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  resize: none;
+}
+#whatsapp-chat a#send-it {
+  color: #555;
+  width: 40px;
+  margin: -5px 0 0 5px;
+  font-weight: 700;
+  padding: 8px;
+  background: #eee;
+  border-radius: 10px;
+}
+.first-msg {
+  background: #f5f5f5;
+  padding: 30px;
+  text-align: center;
+}
+.first-msg span {
+  background: #e2e2e2;
+  color: #333;
+  font-size: 14.2px;
+  line-height: 1.7;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: inline-block;
+}
+.start-chat .blanter-msg {
+  display: flex;
+}
+#get-number {
+  display: none;
+}
+#whatsapp-chat a.close-chat {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+}
+@keyframes showhide {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes showchat {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #whatsapp-chat {
+    width: auto;
+    left: 5%;
+    right: 5%;
+    font-size: 80%;
+  }
+}
+.hide {
+  display: none;
+  animation-name: showhide;
+  animation-duration: 1.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+.show {
+  display: block;
+  animation-name: showhide;
+  animation-duration: 1.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+/*=================================================
+||				14. Media Query
+==================================================*/
+
+@media (max-width: 991px) {
+  .offer-cta {
+    background: url("../images/cta-1.png") bottom left no-repeat;
+  }
+  .offering {
+    padding-bottom: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .header-title-wrapper {
+    opacity: 0.9;
+  }
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .header-sub-title {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  .company-name {
+    font-size: 1.5rem;
+  }
+
+  .company-type {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    width: 90%;
+    margin-bottom: 2rem;
+    font-size: 1.5rem !important;
+  }
+  .slide {
+    height: auto;
+  }
+  .intro {
+    max-height: 627px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-weight: 400;
+  }
+  .navbar-default .navbar-brand {
+    padding-left: 15px;
+  }
+
+  .features-details .grid-50 {
+    width: 100%;
+    display: block;
+    padding-left: 3rem;
+  }
+
+  .features-details .grid-50:last-child {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .row.custom-table.features-details {
+    margin: 0 !important;
+  }
+
+  .owl-stage .item-detail {
+    font-size: 1.5rem;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 43%;
+    font-size: 22px;
+    padding: 5px;
+  }
+  .owl-next {
+    right: -30px;
+  }
+  .owl-prev {
+    left: 0;
+  }
+
+  #top-places .owl-next {
+    right: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .owl-prev {
+    left: 0;
+  }
+  #top-places .owl-next {
+    right: 0;
+  }
+  .features-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .features .custom-table {
+    margin: 0 auto;
+  }
+  .features-details .grid-50:last-child {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+  .features-details .grid-50 {
+    width: 100%;
+    display: block;
+
+    margin-right: 0 !important;
+    margin-left: 0;
+  }
+}
+@media (max-width: 360px) {
+  .header-title-wrapper {
+    transform: translateY(10%);
+  }
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  .header-sub-title {
+    font-size: 1.75rem;
+    margin: 20px 10px;
+  }
+}
